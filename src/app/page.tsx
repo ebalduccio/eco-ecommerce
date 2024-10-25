@@ -41,20 +41,20 @@ export default function Home(): JSX.Element {
   return (
     <AppProvider>
       <div className="min-h-screen bg-gray-100 flex flex-col">
-        <Header 
-          searchTerm={searchTerm} 
-          onSearchChange={setSearchTerm} 
+        <Header
+          searchTerm={searchTerm}
+          onSearchChange={setSearchTerm}
         />
 
         <main className="flex-grow container mx-auto px-4 py-8">
           {isLoading ? (
             <div className="flex justify-center items-center h-64">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-600"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-600" />
             </div>
           ) : error ? (
             <div className="text-center py-12">
               <div className="text-red-600 mb-4">{error}</div>
-              <Button 
+              <Button
                 onClick={() => window.location.reload()}
                 variant="outline"
               >
@@ -67,7 +67,7 @@ export default function Home(): JSX.Element {
               {searchTerm && (
                 <div className="mb-6">
                   <p className="text-gray-600">
-                    Showing results for "{searchTerm}"
+                    Showing results for &quot;{searchTerm}&quot;
                     {filteredProducts.length === 0 ? (
                       <span className="ml-2">- No products found</span>
                     ) : (
@@ -77,14 +77,14 @@ export default function Home(): JSX.Element {
                 </div>
               )}
               <ProductGrid products={filteredProducts} />
-              
+
               {filteredProducts.length === 0 && searchTerm && (
                 <div className="text-center py-12">
                   <h3 className="text-xl font-semibold mb-2">No Products Found</h3>
                   <p className="text-gray-600 mb-4">
-                    We couldn't find any products matching your search.
+                    We couldn&apos;t find any products matching your search.
                   </p>
-                  <Button 
+                  <Button
                     onClick={() => setSearchTerm('')}
                     variant="outline"
                   >
