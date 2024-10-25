@@ -9,7 +9,6 @@ import {
   Shield, 
   Heart,
   Share2,
-  Info,
   CheckCircle2,
   CircleDollarSign,
 } from 'lucide-react'
