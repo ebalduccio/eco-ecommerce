@@ -1,7 +1,6 @@
 // src/components/product/ProductDetailDialog.tsx
 'use client'
 
-import { useState } from 'react'
 import { Star } from 'lucide-react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Product } from '@/types'

@@ -6,7 +6,6 @@ import {
   X, 
   Search, 
   Leaf, 
-  ShoppingBag, 
   Heart,
   Bell,
   ChevronDown
